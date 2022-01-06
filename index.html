@@ -3,8 +3,14 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -16,7 +22,7 @@
                     <a href="#about-me">About Me</a>
                 </li>
                 <li>
-                    <a href="#work">Work</a>
+                    <a href="#portfolio">Portfolio</a>
                 </li>
                 <li>
                     <a href="#contact-me">Contact Me</a>
@@ -24,47 +30,111 @@
             </ul>
         </div>
     </header>
-    
-    <div class="hero"></div>
-    <div class="content">
-        <div class="about-me">
-            <h2>About Me</h2>
-            <p>
-            Hello,
+    <div class="portfolio">
+        <div class="container">
+            <img src="./assets/css/images/picture.jpeg" alt="A profession picture of me" style="height: 700px;">
+            <div class="content">
+              <h1>About Me</h1>
+              <p>My name is Rahwa Tefera and my friends call me Wawa.
+                I recently graduated from Washington State University with an Electrical Engineering degree and focused on Power.
+                I am currently attending the full-stack certificate program at the University of Washignton. I've always wanted to code
+                and so I thought why not Web Development. </p>
+            </div>
+          </div>
+        <div class="title">
+            <br>
+            <h1>Portfolio</h1>
+            <div class="columns has-text-centered subtitle is-centered m-5 challenge">
+                <div class="custom-column column is-3">
+                    <div class="card">
+                        <a href="https://mikiwolfe.github.io/30-day-Challenge/">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img class="float-right" src="./assets/css/images/project1.jpg" alt="project1">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <h4 class=>Self Exploration</h4>
+                                    <br>
+                                    <p>This project was made so that on can explore things about themselves! </p>
+                                    <br>
+                                    <p class="sans-serif">CLICK FOR PAGE<i class="icon fas fa-chevron-right"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="custom-column column is-3">
+                    <div class="card">
+                        <a href="https://rahwa1.github.io/PasswordGenerator/">
+                            <div class="card-image">
 
-            <p>My name is Rahwa Tefera and my friends call me Wawa.</p>
+                                <figure class="image is-4by3">
+                                    <img class="float-right" src="./assets/css/images/password.jpg"
+                                        alt="password generator">
+                                </figure>
 
-            <p>I recently graduated from Washington State University with an Electrical Engineering degree and focused on Power.</p>
-
-            <p>I am currently doing full stack at the University of Washignton Bootacamp program.</p>
-            </p>
-        </div>
-        <div class="work">
-            <img class="float-right" src="images/transmission.jpg" alt="transmission work image">
-            <img class="float-right" src="images/game.png" alt="game work image">
-            <img class="float-right" src="images/mario.jpg" alt="mario game work image">
-            <img class="float-right" src="images/calculator.jpg" alt="calculator work image">
-            <img class="float-right" src="images/minesweeper.jpg" alt="minesweeper game work image">
-            <h2>Work</h2>
-            <p>
-                Here you'll find some of the works I've done in the past.
-            </p>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <h4>Password Generator</h4>
+                                    <br>
+                                    <p> This page will help you generate a password!
+                                    </p>
+                                    <br>
+                                    <p class="sans-serif">CLICK FOR PAGE<i class="icon fas fa-chevron-right"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="custom-column column is-3">
+                    <div class="card">
+                        <a href="https://rahwa1.github.io/WorkDay_Schduler/">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img class="float-right" src="./assets/css/images/scheduler.jpg"
+                                        alt="workday scheduler">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <h4 class="pb-2">Workday Scheduler</h4>
+                                    <br>
+                                    <p> This page will help you plan out your schedule for the day!
+                                    </p>
+                                    <br>
+                                    <p class="sans-serif">CLICK FOR PAGE<i class="icon fas fa-chevron-right"></i></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="contact">
-            <h2>Contact Me</h2>
-            <ul>
-                <li> <a class="float-left" href="https://github.com/rahwa1" target="_blank">Github</a></li>
-                <li> <a class="float-left" href="mailto: melakenashet@gmail.com">Send Email</a></li>
-                <li> <a class="float-left" href="https://linkedin.com/in/melakenashe-rahwa-tefera" target="_blank">Linkedin</a></li>
+            <h1><strong> Contact Me</strong></h1>
+            <br>
+            <br>
+            <br>
+            <ul class="contact-links">
+                <li><i class="icon fas fa-github"> </i><a class="float-left" href="https://github.com/rahwa1" target="_blank">Github</a></li>
+                <li><i class="icon fas fa-email"> </i> <a class="float-left" href="mailto: melakenashet@gmail.com">Send Email</a></li>
+                <li><i class="icon fas fa-linkedin"> </i> <a class="float-left" href="https://linkedin.com/in/melakenashe-rahwa-tefera" target="_blank">Linkedin</a></li>
             </ul>
         </div>
     </div>
-    
+
+
     <footer>
 
-        <h3>Made with ❤️️ by Wawa</h3>
+        <h3>Rahwa Tefera 2021</h3>
+
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
-

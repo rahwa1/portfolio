@@ -37,17 +37,33 @@ a {
   text-decoration: none;
 }
 
-p {
-  font-size: 16px;
+.portfolio {
+  min-height: 70vh; 
+  padding: 100px 0;
 }
 
-.hero {
-  height: 800px;
-  width: 100%;
-  margin-bottom: 25px;
-  background-image: url("images/coding.jpeg");
-  background-size: cover;
-  background-position: center;
+.container {
+  position: relative;
+  max-width: 900px; 
+ 
+}
+
+.container .content {
+  position: relative; 
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1; 
+  padding: 20px; 
+  
+}
+
+.container img{
+  
+  border-radius: 50%;
+ 
+}
+
+.container h1{
+  color:#f1f1f1;
 }
 
 .float-left {
@@ -63,62 +79,36 @@ p {
   
 }
 
-.content {
-  max-height: 200px;
-  width: 50%;
-  margin-left: 20px;
-  margin-right: 20px;
-  white-space: nowrap;
-} 
-
-.about-me {
-  margin-bottom: 20px; 
-  padding: 50px; 
-  height: 200px;
-  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-  background-color: lightskyblue;
-  color:black;
-}
-
-.about-me p{
-  position: left;
-  padding: 2px;
-  right: 200px;  
-  width: 200px; 
-  font-size: 18px;
+.custom-column:hover {
   display: block;
-  
+  opacity: 0.5;
 }
 
-.work {
-  margin-bottom: 20px; 
-  padding: 50px; 
-  height: 400px;
-  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-  background-color: lightskyblue;
+p {
+  font-family:'Segoe UI';
+  font-size: 1.1rem;
+}
+
+.title h1{
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+ 
+}
+
+.contact-links li a {
+  transition: all 0.3s ease 0s;
   color: black;
+  font-size: 16px;
+}
+
+.contact h1{
+  text-align: center;
   
-}
-
-.contact{
-  margin-bottom: 20px; 
-  padding: 50px; 
-  height: 100px;
-  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-  background-color: lightskyblue;
-  color: black;
-
-}
-
-.content ul{
-  float: right;
-  width: 20%;
-  padding: 5px;
-}
-
-.content h2 {
-  position: relative;
-  right: 20px;
 }
 
 footer {
@@ -126,6 +116,7 @@ footer {
   clear: both;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
   text-align: center;
+  display: block;
   margin-bottom: 5%;
 }
 
